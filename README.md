@@ -1,4 +1,4 @@
-<img src="./images/cloud-color-logo.png" width="20%"/>
+<img src="./images/cloud+watson.png" width="20%"/>
 
 Cloud and Datascience workshop
 
