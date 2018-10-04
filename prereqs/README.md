@@ -8,7 +8,7 @@
 
 + You’ll be registered for a lite account with no time restrictions, please chose US region.
 
-<img src="./images/registration-ibmcloud-us.png" width="20%"/>
+<img src="./images/registration-ibmcloud-us.png" width="60%"/>
 
 ## IBM CLoud Command Line Interface 
 
