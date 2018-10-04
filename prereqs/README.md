@@ -10,7 +10,7 @@
 
 <img src="./images/registration-ibmcloud-us.png" width="60%"/>
 
-## IBM CLoud Command Line Interface 
+## IBM Cloud Command Line Interface 
 
 + You will use the IBM Cloud commands to create, update and deploy your apps.
 
