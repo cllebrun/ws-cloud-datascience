@@ -3,7 +3,7 @@
 
 You will learn how to create and deploy you first app in Node.js with the IBM Cloud platform. You will also understand how to work locally with Node.js, connect to an IBM Cloud service and push your modifications to the IBM Cloud platform. 
 
-<img src="./images/cloud+watson.png" width="40%"/>
+<img src="./images/cloud.png" width="40%"/>
 
 
 # Objective
