@@ -27,11 +27,9 @@ In the following lab, you will learn:
 # Steps
 
 1. [Create a new "hello world" web application using the web UI](#step-1---create-a-new-web-application-using-the-web-UI)
-2. [Run the node.js app locally](#step-2---run-the-node.js-app-locally)
-3. [Change a file locally](#step-3---change-a-file-locally)
-4. [Push your local app to the cloud](#step-4---push-your-local-app-to-the-cloud)
-5. [Create and bind a Watson service](#step-5---create-and-bind-a-watson-service)
-6. [Use the Watson service in your app](#step-6---USe-the-Watson-service-in-your-app)
+2. [Create a Cloudant service](#step-4---create-a-cloudant-service)
+3. [Clone a new app](#step-5---clone-a-new-app)
+4. [Push your new app](#step-6---push-your-new-app)
 
 
 
@@ -47,13 +45,31 @@ In the following lab, you will learn:
 
 1. Look for the ***SDK for Node.js*** from the search bar and create an instance of this runtime (it is part of the Cloud Foundry App section). 
 
-1. Give your app a unique name and unique host (e.g. nodeapp-[your-initials])
+1. Give your app a unique name and unique host (e.g. mypredictionapp-[your-initials]). Keep the default Lite plan.
 
 1. Wait for your application to start and click on "Visit App URL" to view your application.
 
+<img src="./images/nodejs.png" width="80%"/>
+
 The SDK for Node.js created a simple "Hello World!" web app that will become our starting point.
 
+# Step 2 - Create a Cloudant service
 
+You will need a database for your app, you are now going to create an instance of a Cloudant NoQL Database
+
+1. Navigate to the Cloud Platform **Catalog**.
+
+1. Look for the ***Cloudant*** service from the search bar and create an instance of the service in the same region than for your app and chose the ***use both legacy credentials and IAM*** authentication method. Keep the default Lite plan.
+
+1. Once your service is created, you will bind it to your Node.js app. Click on the ***create connection*** button and select your app.
+
+<img src="./images/connect.png" width="80%"/>
+
+1. Restage your application. Your application will restart and the service connection information will be made available to your application.
+
+<img src="./images/connected.png" width="80%"/>
+
+1. 
 
 # Step 2 - Run the node.js app locally
 
