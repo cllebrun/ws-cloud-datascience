@@ -1,11 +1,13 @@
-<img src="./images/cloud+watson.png" width="20%"/>
-
-#Cloud and Data Science workshop
+<!-- <img src="./images/cloud+watson.png" width="20%"/>  
+-->
+# Cloud and Data Science workshop
 
 ## Use case
 Telecommunication market is expanding day by day. Companies are facing a severe loss of revenue due to increasing competition hence the loss of customers. They are trying to find the reasons of losing customers by measuring customer loyalty to regain the lost customers. The behavior of customers leaving the current company and moving to another telecom company is called **churn**.   
 
 In the following serie of labs, you'll put yourself in the shoes of a front-end developer in charge of building a customer call-center application which should display to the operator the **likelyhood of the calling customer to churn**.  
+![](images/AppFrontEnd.png)  
+
 The churn likelihood is giving by a predictive model that you will build, putting yourself in the shoes of a Data Scientist.  
 Finally, you'll play the role of the developer in charge of integrating AI artifacts into business applications.  
 
