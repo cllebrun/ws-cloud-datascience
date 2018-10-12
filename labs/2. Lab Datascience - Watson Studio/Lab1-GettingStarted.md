@@ -198,6 +198,8 @@ We will now process the entire file with our data cleansing and feature engineer
 1. Once executed, you can go back to the project assets, and you will find the generated `customer_churn` file that you can preview by clicking on it. We will reuse this file in the following part of the Labs.
 1. The same processing pipeline could be applied to another file than the one used to create the Data Flow, using the `Change Data Asset` button
 
+> You have completed the Data Refinery section, the following text recaps the Data Refinery capabilities and makes note of the different file formats supported. You can read those for informational purpose or skip those and **progress directly to the remaining section of this lab** where you will run your first **Jupyter Notebook**.
+
 ### Conclusion of Data Refinery section
 We have experienced the Data Refinery which is Watson Studio's integrated ETL (Extract, Transform and Load) tool. You have seen that the tool is designed to define ETL operations without coding, even though it can be complemented by formulas.
 
@@ -209,35 +211,27 @@ Parquet is not as efficient as zipping a file, but can readily be used by data p
 In the case of this input file, the resulting parquet conversion would yield a file of about 42 MB, vs 116 MB for the raw CSV file and 23 MB for the zipped CSV.
 
 ## Using notebooks for data exploration
-In this section, we will start exploring the data from a file which holds customer sales observations related to buying behavior of customers of an outdoor equipment company regarding tent purchases, using a Jupyter notebook.
+In this section, we will start exploring the data from a file which holds the car data you used earlier by this time using a Jupyter notebook.
 
 This is a different approach to data analysis than the GUI-driven tools such as Data Refinery, here the paradigm is to perform programmatic operations on data files rather than GUI driven.   
-Each approach has its pros and cons, and selecting one versus the other can be a matter of personal preference.
+Each approach has its pros and cons, and selecting one versus the other can be a matter of personal preferences.
 
-<!---
 ### Explore the data set
-Ensure that the `GoSales_Tx.csv` file is part of the data assets, so that we can start to have a look at the data:
-1. open the corresponding asset by clicking on the file name from the list
-![](images_1/markdown-img-paste-20180311165147767.png)
- This opens into the tabular preview, where we can discover the data structure:   
-| `IS_TENT` | `GENDER` | `AGE` | `MARITAL_STATUS` | `PROFESSION` |
-| Type: String | Type: String | Type: String | Type: String | Type: String |   
-So there are basically 4 features that can drive the buying decision held in the `IS_TENT` column.
-1. To go further in the analysis, we will create the Profile for the data:
-   * Select the `Profile` tab and then the `Create Profile` button.![](images_1/markdown-img-paste-2018031117034866.png)
-   * After a while, the data profile is computed on the first 5000 lines.
-   * This gives a rough idea on the structure of the data through the content of the columns in statistical terms:
-     * `IS_TENT` is detected as a boolean with roughly 10% occurences of `TRUE` (509 out of the 5000 sample)
-     * `GENDER` has slightly more Male than Female.
-     * `AGE` distribution shows a peak in the 24-30 years, with an average of 34:![](images_1/markdown-img-paste-20180311171230900.png)
-     * `MARITAL_STATUS` has half of the sample as married
-     * `PROFESSION` shows almost half of the sample unspecified, with 8 distinct professions.
-1. This gives a first-level overview of what to expect. We will now use the `GoSales_Tx_Analysis_cleared.ipynb` notebook for more data analysis:
+Ensure that the `cars.csv` file is part of the data assets, so that we can start to have a look at the data:
+
+1. You will now use the `Visualize_car_data_with_Brunel.ipynb` notebook for data analysis:
    1. Go back to the Project page
    1. In the `Notebooks` section, select `[(+) New notebook]`: ![](images_1/markdown-img-paste-20180313225657161.png)
-   1. Select the `From file` tab, scroll down to `Choose file` and select the `GoSales_Tx_Analysis_cleared.ipynb` file ![](images_1/markdown-img-paste-20180313225843866.png)
+   1. Select the `From file` tab, scroll down to `Choose file` and select the `Visualize_car_data_with_Brunel.ipynb` file ![](images_1/markdown-img-paste-20180313225843866.png)
    1. For this first lab, we'll use a plain Python Jupyter notebook:
       In the bottom-right section below, select the `Default Python 3.5 Free` runtime environment: ![](Lab1-GettingStarted/20180918_66751853.png)
       (We will use a Spark environment in a later lab).
-   1. **Open** the notebook. From that point on, follow the instructions that are within the Notebook.
---!>
+   1. **Open** the notebook. From that point on, follow the instructions that are within the Notebook. **You will have to retrieve the files from the data assets.**
+   1. Once the Notebook is open, create an empty `Code` cell and position your cursor inside the cell.
+   1. From the right pane, select the `cars.csv` file and select `Insert Credentials`
+   ![](images_1/Credentials.png)
+   1. This will insert the `Credentials` to read the file. Rename if needed the variable to `credentials_1` and execute the cell either clicking `Run` button from the toolbar or pressing `Ctrl + Enter`.
+   ![](images_1/Credentials2.png)
+   1. From that point on, read the Notebook and run the cells in sequence typing `Ctrl + Enter`.
+
+   You have now completed the First Lab.
