@@ -1,6 +1,6 @@
 <!-- <img src="./images/cloud+watson.png" width="20%"/>  
 -->
-# Cloud and Data Science workshop
+# Cloud and Data Science workshop using IBM Cloud, IBM Watson ML and IBM Watson Studio
 
 ## Use case
 Telecommunication market is expanding day by day. Companies are facing a severe loss of revenue due to increasing competition hence the loss of customers. They are trying to find the reasons of losing customers by measuring customer loyalty to regain the lost customers. The behavior of customers leaving the current company and moving to another telecom company is called **churn**.   
