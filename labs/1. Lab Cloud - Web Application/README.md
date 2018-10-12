@@ -49,7 +49,7 @@ In the following lab, you will learn:
 
 1. Wait for your application to start and click on "Visit App URL" to view your application.
 
-<img src="./images/nodejs.png" width="40%"/>
+<img src="./images/nodejs.png" width="80%"/>
 
 The SDK for Node.js created a simple "Hello World!" web app that will become our starting point.
 
@@ -63,11 +63,11 @@ You will need a database for your app, you are now going to create an instance o
 
 1. Once your service is created, you will bind it to your Node.js app. Click on the ***create connection*** button and select your app.
 
-<img src="./images/connect.png" width="40%"/>
+<img src="./images/connect.png" width="80%"/>
 
 1. Restage your application. Your application will restart and the service connection information will be made available to your application.
 
-<img src="./images/connected.png" width="40%"/>
+<img src="./images/connected.png" width="80%"/>
 
 1. 
 
