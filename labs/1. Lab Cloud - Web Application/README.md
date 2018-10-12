@@ -63,16 +63,16 @@ You will need a database for your app, you are now going to create an instance o
 
 1. Once your service is created, you will bind it to your Node.js app. Click on the ***create connection*** button on the right and select your app.
 
-<img src="./images/connect.png" width="80%"/>
-<img src="./images/connectCF.png" width="80%"/>
+  <img src="./images/connect.png" width="80%"/>
+  <img src="./images/connectCF.png" width="80%"/>
 
 1. Restage your application. Your application will restart and the service connection information will be made available to your application.
 
-<img src="./images/connected.png" width="80%"/>
+  <img src="./images/connected.png" width="80%"/>
 
 1. Navigate to the **Service credentials** tab on the left. Click on **View credentials** and save somewhere the "url" containing access, username and password. You will need it in the following steps.
 
-<img src="./images/credentials.png" width="80%"/>
+  <img src="./images/credentials.png" width="80%"/>
 
 # Step 3 - Clone a new app
 
