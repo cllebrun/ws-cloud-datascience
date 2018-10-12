@@ -27,9 +27,9 @@ In the following lab, you will learn:
 # Steps
 
 1. [Create a new "hello world" web application using the web UI](#step-1---create-a-new-web-application-using-the-web-UI)
-2. [Create a Cloudant service](#step-4---create-a-cloudant-service)
-3. [Clone a new app](#step-5---clone-a-new-app)
-4. [Push your new app](#step-6---push-your-new-app)
+2. [Create a Cloudant service](#step-2---create-a-cloudant-service)
+3. [Clone a new app](#step-3---clone-a-new-app)
+4. [Push your new app](#step-4---push-your-new-app)
 
 
 
@@ -137,6 +137,7 @@ server starting on http://localhost:6023
 12. Navigate in the mydb DB or in the table to discover the clients attributes you have. Note one of the client id.
 
 13. In this app a client id refer to the client phone number. If you go back to the home page of your app running locally, you can enter a client id in the phone number input to access the clients data. Ignore the "will churn" button for the moment.
+
 
 14. Stop your app locally (ctrl+c)
 
