@@ -60,7 +60,7 @@ The table of 10 clients in your web app represent test clients, with who you can
 
 2. Edit the file public/page1.html with a code editor and at the end of the file in the 'script' section:
 
-<img src="./images/code.png.png" width="80%"/>
+<img src="./images/code.png" width="80%"/>
 
 3. This function is called whe you click the "Will Churn ?" button. So to get the logs, look for clients details from the home page, like for  client "2048"  for example. Then scroll down the page and click on the "will churn ?" button. Look at the logs.
 
@@ -69,7 +69,7 @@ The table of 10 clients in your web app represent test clients, with who you can
 5. You need to display the result between 0 and 100 %. The result is in the "value" part of the scoring result. It's in the last array of the values and the "true" corresponding confidence rate is the second element.
 For example, here, the result is "False", because the client will churn with a confidence of 0,23....
 
-<img src="./images/example.png.png" width="80%"/>
+<img src="./images/example.png" width="80%"/>
 
 You will give the "True" confidence only, with 2 numbers after the coma.
 
