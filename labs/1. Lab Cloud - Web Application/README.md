@@ -37,17 +37,17 @@ In the following lab, you will learn:
 
 1. Log in to [IBM Cloud Platform console](https://console.bluemix.net).
 
-1. Select the Region (e.g. United States) where you want to create your application. If needed, create an org and a space in that region.
+2. Select the Region (e.g. United States) where you want to create your application. If needed, create an org and a space in that region.
 
-1. Note these Region, Org and Space names, as you may need it later to target your work space.
+3. Note these Region, Org and Space names, as you may need it later to target your work space.
 
-1. Navigate to the Cloud Platform **Catalog**.
+4. Navigate to the Cloud Platform **Catalog**.
 
-1. Look for the ***SDK for Node.js*** from the search bar and create an instance of this runtime (it is part of the Cloud Foundry App section). 
+5. Look for the ***SDK for Node.js*** from the search bar and create an instance of this runtime (it is part of the Cloud Foundry App section). 
 
-1. Give your app a unique name and unique host (e.g. mypredictionapp-[your-initials]). Keep the default Lite plan.
+6. Give your app a unique name and unique host (e.g. mypredictionapp-[your-initials]). Keep the default Lite plan.
 
-1. Wait for your application to start and click on "Visit App URL" to view your application.
+7. Wait for your application to start and click on "Visit App URL" to view your application.
 
 <img src="./images/nodejs.png" width="80%"/>
 
@@ -59,18 +59,19 @@ You will need a database for your app, you are now going to create an instance o
 
 1. Navigate to the Cloud Platform **Catalog**.
 
-1. Look for the **Cloudant** service from the search bar and create an instance of the service in the same region than for your app and chose the **use both legacy credentials and IAM** authentication method. Keep the default Lite plan.
+2. Look for the **Cloudant** service from the search bar and create an instance of the service in the same region than for your app and chose the **use both legacy credentials and IAM** authentication method. Keep the default Lite plan.
 
-1. Once your service is created, you will bind it to your Node.js app. Click on the ***create connection*** button on the right and select your app.
+3. Once your service is created, you will bind it to your Node.js app. Click on the ***create connection*** button on the right and select your app.
 
   <img src="./images/connect.png" width="80%"/>
+
   <img src="./images/connectCF.png" width="80%"/>
 
-1. Restage your application. Your application will restart and the service connection information will be made available to your application.
+4. Restage your application. Your application will restart and the service connection information will be made available to your application.
 
   <img src="./images/connected.png" width="80%"/>
 
-1. Navigate to the **Service credentials** tab on the left. Click on **View credentials** and save somewhere the "url" containing access, username and password. You will need it in the following steps.
+5. Navigate to the **Service credentials** tab on the left. Click on **View credentials** and save somewhere the "url" containing access, username and password. You will need it in the following steps.
 
   <img src="./images/credentials.png" width="80%"/>
 
@@ -82,27 +83,27 @@ You will need a database for your app, you are now going to create an instance o
   $ cd workshopDatascienceIBM
   ```
 
-1. Fork the source code of the Prediction app from Git: 
+2. Fork the source code of the Prediction app from Git: 
   
   ```
   $ git clone https://github.com/cllebrun/mypredictionapp
   ```
 
-1. From to the directory of the starter code
+3. From to the directory of the starter code
 
   ```
   $ cd mypredictionapp
   ```
-1. Open the **vcap-local.json** file and copy the Cloudant url you saved from the IBM cloud in Step 2, save it and close. It is to access your cloudant DB from your app running locally.
+4. Open the **vcap-local.json** file and copy the Cloudant url you saved from the IBM cloud in Step 2, save it and close. It is to access your cloudant DB from your app running locally.
 
 
-1. Get the node.js dependencies for this project
+5. Get the node.js dependencies for this project
 
   ```
   $ npm install
   ```
 
-1. Start the app
+6. Start the app
 
   ```
   $ npm start
@@ -119,25 +120,25 @@ server starting on http://localhost:6023
 
   ```
 
-1. Access the app with your web browser to vizualise your local node.js app.
+7. Access the app with your web browser to vizualise your local node.js app.
 
 <img src="./images/applocale.png" width="80%"/>
 
-1. Navigate to the "Clients list" page to initialize your Cloudant database with a list of clients.
+8. Navigate to the "Clients list" page to initialize your Cloudant database with a list of clients.
 
-1. Verify in your console logs that your Cloudant database has been populated with a list of 10 clients.
+9. Verify in your console logs that your Cloudant database has been populated with a list of 10 clients.
 
-1. Go back to the IBM Cloud console and access your Cloudant DB UI clicking on its ***alias name*** and then on the **Launch Cloudant Dashboard**
+10. Go back to the IBM Cloud console and access your Cloudant DB UI clicking on its ***alias name*** and then on the **Launch Cloudant Dashboard**
 
 <img src="./images/dashboard.png" width="80%"/>
 
-1. Notice that a database "mydb" has been created with 10 elements. The clients are displayed in the table on the web app.
+11. Notice that a database "mydb" has been created with 10 elements. The clients are displayed in the table on the web app.
 
-1. Navigate in the mydb DB or in the table to discover the clients attributes you have. Note one of the client id.
+12. Navigate in the mydb DB or in the table to discover the clients attributes you have. Note one of the client id.
 
-1. In this app a client id refer to the client phone number. If you go back to the home page of your app running locally, you can enter a client id in the phone number input to access the clients data. Ignore the "will churn" button for the moment.
+13. In this app a client id refer to the client phone number. If you go back to the home page of your app running locally, you can enter a client id in the phone number input to access the clients data. Ignore the "will churn" button for the moment.
 
-1. Stop your app locally (ctrl+c)
+14. Stop your app locally (ctrl+c)
 
 
 # Step 4 - Push your local app to the cloud
@@ -171,7 +172,7 @@ Several attributes are optional.
 
 You are now going to use the IBM CLI you have downloaded in the prerequisites.
 
-1. Connect to the IBM Cloud Platform from your terminal window:
+2. Connect to the IBM Cloud Platform from your terminal window:
 Here, we use the api endoint : https://api.ng.bluemix.net because we are targeting the US South region to host our app.
 
   ```
@@ -185,36 +186,36 @@ Note that you could also use one of the following, if you createda a space befor
   * SYDNEY: https://api.au-syd.bluemix.net
 
   
-1. Login to the IBM Cloud Platform with your email and password (the same to login from the web console)
+3. Login to the IBM Cloud Platform with your email and password (the same to login from the web console)
 
   ```
   $ ibmcloud login
   ```
 
-1. If it is asked, select your account (you may have several accounts acces if you share apps with other people)
+4. If it is asked, select your account (you may have several accounts acces if you share apps with other people)
 
-1. Target Cloud Foundry
+5. Target Cloud Foundry
 
   ```
   $   ibmcloud target --cf
   ```
 
 
-1. Select the space where you want to push your application ( the same where your hello world app is hosted because you will erease it)
+6. Select the space where you want to push your application ( the same where your hello world app is hosted because you will erease it)
 
-1. Check if you Cloudant service is accessible from your space:
+7. Check if you Cloudant service is accessible from your space:
    
   ```
   $ ibmcloud cf services
    ```
 
-1. Push the app to the IBM Cloud Platform
+8. Push the app to the IBM Cloud Platform
 
   ```
   $ ibmcloud cf push
   ```
 
-1. When the command completes, access the application running in the cloud to confirm your change was deployed
+9. When the command completes, access the application running in the cloud to confirm your change was deployed
 
   ```
     Waiting for app to start...
