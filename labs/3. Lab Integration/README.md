@@ -30,7 +30,7 @@ You successfully completed Lab 1 et Lab 2
 
 1. On your local environement, open the file "app.js" with a code editor, you need to configure few things to be able to call your machine learning model
  
- You need to edit it to complete the following informations:
+ You need to edit it to complete the following informations with the credentials from your Watson Machine learning service:
  ```
 var wml_service_credentials_url ='<url>'; // TO COMPLETE
 var wml_service_credentials_username = '<username>'; // TO COMPLETE
@@ -38,7 +38,7 @@ var wml_service_credentials_password = '<password>'; // TO COMPLETE
 
  ```
 
- 2. Line 115 you also need to fill the scoring_url with the information you got from Watson Studio (Node.js code snippet):
+ 2. Line 115 you also need to fill the scoring_url with the information you got from Watson Studio (Node.js code snippet when you deployed your model in Watson Studio):
 
  ```
 // TO COMPLETE
@@ -93,3 +93,5 @@ your app is now finishe and online, but if you still have some time, here are th
 - add a big "YES" or " No" depending of the value of the scoring
 
 - Impress us with your UI improvement and push your app to IBM cloud when you're done !
+
+- If you want to play, why not trying to integrate a Watson Service such as Text To Speech to play the churn result in the browser ?
